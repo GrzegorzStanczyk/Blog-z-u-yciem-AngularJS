@@ -1,1 +1,4 @@
-# front-end-dev-bootcamp_w3-ex3
+# front-end-dev-bootcamp_w3-ex3\
+##Blog z użyciem AngularJS 
+Wykorzystując framework AngularJS (“jedynkę”), stwórz aplikację, która na stronie głównej wyświetlać będzie posty. Każdy post powinien zawierać następujące informacje: title i body. Utwórz widok tak, aby tytuł był również odnośnikiem kierującym do nowej podstrony aplikacji według schematu “#/post/{{ post.id }}”. Po przejściu pod ten adres, powinien się pojawić widok z pojedynczym wpisem, gdzie również wyświetl jego tytuł (title) i treść (body), a także przycisk “Powrót do listy wpisów”, który kierować powinien z powrotem do pełnej listy. Ogranicz liczbę wpisów na stronie głównej do 15. Jako źródło wpisów wykorzystaj ten adres https://jsonplaceholder.typicode.com/posts Zauważ, że każdy obiekt w tablicy zawiera potrzebne informacje: title, body i id. To właśnie dzięki id stworzysz odnośnik do pełnego wpisu. Kiedy natomiast wyświetlana będzie podstrona z pełnym 
+wpisem, wyślij po niego zapytanie pod adres https://jsonplaceholder.typicode.com/posts/ID gdzie ID to liczba spod klucza id w obiekcie (zobacz np. https:// jsonplaceholder.typicode.com/posts/1).
