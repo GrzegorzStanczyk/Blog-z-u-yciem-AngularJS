@@ -6,7 +6,8 @@
         .constant("API_URL", "https://jsonplaceholder.typicode.com/posts")
         .config(["$routeProvider", "$httpProvider", function($routeProvider, $httpProvider) {
 
-
+            // Zapisuje w pamięci
+            $httpProvider.defaults.cache = true;
 
             $routeProvider
             .when("/", {

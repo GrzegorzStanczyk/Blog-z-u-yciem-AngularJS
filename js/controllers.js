@@ -11,10 +11,13 @@
 
     }]);
 
-    controllers.controller("PostController", ["$http", "$scope", function($http, $scope) {
-
+    controllers.controller("PostController", ["API_URL", "$routeParams", "$http", "$scope", function(API_URL, $routeParams, $http, $scope) {
+        
+        $http.get(API_URL + "/" + $routeParams.id)
+            .then(function(res) {
+                $scope.post = res.data;
+            });
     
-
     }]);
 
 })();
